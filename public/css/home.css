@@ -1,0 +1,471 @@
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+    /* Fuentes */
+    --font-roboto: 'Roboto', sans-serif;
+    /* Tamano de Fuentes */
+    --paragraph: 12px;
+    --title: 24px;
+    --prices: 18px;
+    --discounts-descriptions: 16px;
+}
+
+/****************************************/
+/*Estilos GENERALES*/
+/****************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-roboto);
+}
+
+li {
+    list-style: none;
+}
+
+/****************************************/
+/*FIN DE LOS ESTILOS GENERALES*/
+/****************************************/
+
+
+/****************************************/
+/*inicia HEADER*/
+/****************************************/
+
+header {
+    background-color: var(--amarillo);
+    font-size: var(--paragraph);
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+header .headerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .headerRow img.logo {
+    width: 260px;
+}
+
+
+header .headerRow div.busqueda input{
+    width: 400px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-right: none;
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #909090;
+    border-left: 1px solid #909090;
+}
+
+header .headerRow div.busqueda button {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #909090;
+    border-right: 1px solid #909090;
+    border-left: none;
+    position: relative;
+    top: 0px;
+    right: 3px;
+    
+}
+
+header .headerRow div.p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+header nav .menu-top{
+    margin-bottom: 20px;
+}
+
+header .burger-menu {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 30px;
+    padding: 7px;
+    font-size: 17px;
+    margin: 10px auto 0 auto;
+}
+
+header nav.nav-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav.nav-flex .menu-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+header nav.nav-flex .menu-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+header nav.nav-flex .menu-top li{
+    margin-right: 2px;
+    margin-left: 20px;
+    height: 5px;
+    margin-top: 60px;
+    font-size: 17px;
+}
+
+header nav.nav-flex .menu-bottom li{
+    margin-right: 25px;
+    margin-left: 20px;
+    height: 5px;
+    margin-top: 60px;
+    font-size: 17px;
+}
+
+header nav.nav-flex .menu-bottom li i{
+    margin-left: 8px;
+}
+/****************************************/
+/*FIN HEADER*/
+/****************************************/
+
+
+/****************************************/
+/*INICIA EL FOOTER*/
+/****************************************/
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+footer article{
+    margin-bottom: 25px;
+}
+
+footer article p{
+    font-size: var(--paragraph);
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer article h4 {
+    font-size: 14px;
+}
+
+footer article i {
+    color: var(--celeste);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+footer span{
+    font-size: var(--paragraph);
+    color: var(--grisoscuro);
+    text-align: left;
+    padding-left: 10px;
+}
+
+/****************************************/
+/*FINALIZA EL FOOTER*/
+/****************************************/
+
+/****************************************/
+/*COMIENZA LA EDICION DE LOS DEMAS ARTICULOS*/
+/****************************************/
+
+h2{
+    text-align: left;
+    font-size: 20px;
+    color: #646464;
+    text-decoration: none;
+    padding: 20px 50px;
+    /* width: 100%; */
+    background-color: #D3D3D3
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #D3D3D3;
+    
+}
+
+section {
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px #909090;
+    position: relative;
+}
+
+
+section img {
+    border-bottom: 1px solid #909090;
+}
+
+section article i {
+    display: inline-block;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    order: -1;
+    position: absolute;
+    right: 20px ;
+    bottom: 74px;
+    background-color: white;
+}
+
+section article .row{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+section article .row div.precio{
+    flex: 30px;
+}
+
+section article .row div.descuento{
+    flex: 70%;
+}
+
+section article .row div.nombreDeProducto{
+    padding-top: 12px;
+    padding-bottom: 9px;
+}
+
+section article .row div.nombreDeProducto strong{
+    color: #646464;
+}
+
+
+section .p-verde{
+    flex-grow: 10;
+    color:#39b54a;
+    flex: 70%;
+    text-align: center;
+    
+}
+
+@media (max-width: 1435px){
+    section article i {
+        bottom: 72px;
+        right: 12px;
+    }
+}
+
+
+
+@media (max-width: 1166px){
+
+   
+
+    section article i {
+        bottom: 72px;
+        right: 10px;
+    }
+
+    section article .row div.descuento{
+        flex: 60%;
+    }
+}
+
+@media (max-width: 1064px) {
+    header .headerRow img.logo {
+        width: 200px;
+    }
+    
+    
+    header .headerRow div.busqueda input{
+        width: 300px;
+        height: 30px;
+    }
+    
+    
+    header .headerRow div.p {
+        font-size: 16px;
+    
+    }
+    header .headerRow div.busqueda button {
+        bottom: 90px;
+        left: -3px;
+    }
+}
+
+@media (max-width: 942px){
+
+    section article i {
+        bottom: 70px;
+        right: 5px;
+    }
+
+    section article .row div.descuento{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 904px){
+
+    section article i {
+        bottom: 90px;
+        right: 5px;
+    }
+}
+
+
+
+@media (max-width: 872px){
+
+    header .headerRow div.busqueda input{
+        width: 250px;
+        height: 30px;
+    }
+    
+    
+    header .headerRow div.p {
+        font-size: 14px;
+    
+    }
+    header nav.nav-flex .menu-top li{
+        font-size: 13px;
+    }
+    
+    header nav.nav-flex .menu-bottom li{
+        font-size: 13px;
+    }
+
+    main{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    section article img{ 
+        width: 300px;
+    }
+    section article i {
+        right: 10px ;
+        bottom: 72px;
+        
+    }
+}
+
+@media (max-width: 785px) {
+    header .headerRow div.busqueda input{
+        width: 200px;
+        height: 25px;
+    }
+    
+    
+    header .headerRow div.p {
+        font-size: 13px;
+    
+    }
+    header nav.nav-flex .menu-top li{
+        font-size: 11px;
+    }
+    
+    header nav.nav-flex .menu-bottom li{
+        font-size: 11px;
+    }
+
+    header .headerRow div.busqueda button{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (min-width: 720px){
+    header .burger-menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 720px){
+
+    header nav.nav-flex{
+        display: none;
+       
+    }
+
+    header .burger-menu {
+        width: 35px;
+        margin: 25px auto 15px auto;
+    }
+
+    header .headerRow {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header .headerRow img.logo {
+        width: 300px;
+    }
+    
+    
+    header .headerRow div.busqueda input{
+        width: 200px;
+        height: 50px;
+        border-radius: 10% 0 0 6%;
+    }
+    
+    header .headerRow div.busqueda button {
+        height: 50px;
+        width: 50px;
+        border-radius: 0 20% 20% 0 ;
+        
+    }
+}
+
+@media (max-width: 715px){
+
+    main{
+        justify-content: center;
+    }
+
+    section article img{ 
+        width: 400px;
+    }
+
+    section article .row div.descuento{
+        flex: 300px;
+    }
+
+}
