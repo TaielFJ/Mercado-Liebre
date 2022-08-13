@@ -1,0 +1,319 @@
+:root {
+        --color-amarillo : #EAC926;
+        --color-azul : #03264C;
+        --color-celeste : #1259c3;
+        --color-grisOscuro : #666;
+        --color-grisClaro : #ebebeb;
+        --color-verde : #39b54a;
+        
+        --font-roboto : 'Roboto', sans-serif;
+       
+        --paragraph : 12px;
+        --title : 24px;
+        --prices : 18px;
+        --discounts-descriptions : 16px;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+a {
+    color:  black;
+    text-decoration: none;
+}
+
+body { 
+    font-family: var(--font-roboto);
+    background-color: var(--color-grisClaro);
+}
+
+li {
+    list-style: none;
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--color-amarillo);
+    font-size: var(--paragraph);
+    padding-bottom: 5px;
+    padding-top: 15px;
+    position: fixed;
+    top: 0px; 
+    z-index: 100;
+}
+
+header .burger-menu {
+    background-color: var(--color-celeste);
+    box-sizing: content-box;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 15px;
+    padding: 7px;
+    font-size: 17px;
+    margin: 10px auto 0 auto;
+}
+
+header img#logo {
+    width: 130px;
+    margin: 0px; 
+}
+
+header nav{
+    display: none;
+}
+
+ header .busqueda {
+    margin-left: 10px;
+    border-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+.input {
+    width: 80%;
+}
+ 
+.container {
+    background-color: white;
+    height: 32px;
+    border-radius: 5px;
+}
+.container input{
+    border: solid 0px var(--color-grisClaro);
+    border-radius: 5px;
+    padding: 7px 35px 7px 7px;
+}
+.container input:focus{
+    outline: none;
+}
+
+.busqueda button i {
+    color: var(--color-grisOscuro);
+    margin-left: 10px;
+}
+.busqueda button {
+    border: none;
+    background-color: white;
+}
+
+.parrafo{
+    margin-top: 3px;
+    text-align: center;
+}
+
+
+header nav .menu-top {
+    margin-bottom: 20px;
+}
+
+
+main div img {
+    width: 100%;
+    margin-top: 115px;
+}
+h3.subtitulo{ 
+    text-align: left;
+    color: var(--color-grisOscuro);
+    padding: 10px;
+}
+
+section article img {
+    border-bottom: solid 1px var(--color-grisClaro);
+}
+main section.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article{
+    border: 10px solid rgba(221, 215, 221, 0.733);
+    max-width: 380px;
+    line-height: 22px;
+    padding: 0px 0px 15px 10px;
+    background-color: white;
+    margin: 8px auto;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
+}
+
+
+main section article div {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main section article div i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%; 
+    color: var(--color-verde);
+    position: absolute;
+    top: -20px;
+    right:20px;
+    transition: all 0.05s ease-in;
+}  
+
+main section article div i:hover{
+    transform: rotate(-90deg);
+}
+ 
+main article strong {
+    color: white;
+    opacity: 7;
+    transition: all 450ms;
+}
+main article strong:hover{
+    color: black;
+    
+}
+
+
+main section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.precio {
+    font-size: var(--prices);
+}
+
+#porcentaje {
+    color: var(--color-verde);
+    padding-left: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: var(--color-grisClaro);
+}
+
+footer article {
+    margin-bottom: 20px;
+}
+
+
+footer article p {
+    font-size: var(--paragraph);
+    width: 80%;
+    margin: 0 auto;
+}
+footer article h4 {
+    font-size: 14px;
+}
+
+footer article i {
+    color: var(--color-celeste);
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in;
+}
+
+footer article i:hover{
+    color: grey;  
+}
+
+footer p#copyright {
+    font-size: var(--paragraph);
+    color: var(--color-grisOscuro);
+    text-align: center;
+    padding-left: 10px;
+}
+
+@media(min-width: 768px){
+header {
+     width: 100%;
+}
+header .burger-menu {
+   display: none;
+}
+.tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container {
+    margin-left: 100px;
+}
+
+header nav{
+    display: block;
+    margin: 10px;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+}
+nav.menu li{
+    display: inline-flex;
+    margin:0 5px;
+}
+
+main div img {
+    margin-top: 85px;
+}
+h3
+
+main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    flex-wrap:wrap;
+   
+}
+
+ .productos article{
+    max-width: 300px;     
+    display: inline-block;
+    margin: 10px auto;
+ }
+
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+ }
+}
+
+@media (min-width: 1024px){
+
+
+header img#logo {
+    width: 300px;
+    margin: 0px; 
+}
+
+.container {
+     margin:20px;
+     padding: 0 50px 0 50px;
+}
+
+main section article{
+  
+    width: 23%; 
+}
+
+ .productos article{
+    max-width: 400px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+
+ }
+
+}
